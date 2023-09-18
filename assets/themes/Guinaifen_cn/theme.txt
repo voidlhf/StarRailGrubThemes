@@ -10,7 +10,7 @@ terminal-height: "100%"
   left = 7%
   top = 45%
   width = 27%
-  height = 65%
+  height = 35%
   item_color = "#cccccc"
   selected_item_color = "#ffffff"
   icon_width = 36

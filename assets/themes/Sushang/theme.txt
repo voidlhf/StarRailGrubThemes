@@ -8,9 +8,9 @@ terminal-height: "100%"
 
 + boot_menu {
   left = 7%
-  top = 45%
+  top = 47%
   width = 27%
-  height = 65%
+  height = 35%
   item_color = "#cccccc"
   selected_item_color = "#ffffff"
   icon_width = 36

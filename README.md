@@ -33,9 +33,11 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 6. Reboot the computer
 ## Preview
-![Guinaifen](/preview/Guinaifen.png)
-![Sushang](/preview/Sushang.png)
+![SilverWolf](/preview/SilverWolf.png)
+![TopazNumby](/preview/TopazNumby.png)
+![Jingliu](/preview/Jingliu.png)
 ![FuXuan](/preview/FuXuan.png)
-![DanHeng](/preview/DanHeng.png)
+![DanHeng_ImbibitorLunae](/preview/DanHeng_ImbibitorLunae.png)
+![Blade](/preview/Blade.png)
 
 [More Preview Images](https://github.com/voidlhf/StarRailGrubThemes/tree/master/preview)
