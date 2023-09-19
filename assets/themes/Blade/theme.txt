@@ -18,13 +18,13 @@ terminal-height: "100%"
   item_icon_space = 20
   item_height = 40
   item_padding = 2
-  item_spacing = 22
+  item_spacing = 40
   selected_item_pixmap_style = "select_*.png"
 }
 
 + label {
   left = 7%
-  top = 80%
+  top = 83%
   align = "center"
   id = "__timeout__"
   text = "Selected OS will start in %d seconds"
