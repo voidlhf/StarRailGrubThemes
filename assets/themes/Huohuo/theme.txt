@@ -7,7 +7,7 @@ terminal-width: "100%"
 terminal-height: "100%"
 
 + boot_menu {
-  left = 110
+  left = 120
   top = 47%
   width = 472
   height = 35%
@@ -23,7 +23,7 @@ terminal-height: "100%"
 }
 
 + label {
-  left = 110
+  left = 120
   top = 83%
   align = "center"
   id = "__timeout__"

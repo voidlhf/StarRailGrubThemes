@@ -7,9 +7,9 @@ terminal-width: "100%"
 terminal-height: "100%"
 
 + boot_menu {
-  left = 110
-  top = 47%
-  width = 472
+  left = 120
+  top = 45%
+  width = 502
   height = 35%
   item_color = "#cccccc"
   selected_item_color = "#ffffff"
@@ -23,10 +23,10 @@ terminal-height: "100%"
 }
 
 + label {
-  left = 110
+  left = 120
   top = 83%
   align = "center"
   id = "__timeout__"
-  text = "Selected OS will start in %d seconds"
+  text = "当前已选中系统将会在 %d 秒后启动"
   color = "#cccccc"
 }
