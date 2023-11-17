@@ -38,4 +38,4 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 [More Preview Images](https://github.com/voidlhf/StarRailGrubThemes/tree/master/preview)
 
-The labels in the bottom right corner of the preview image do not exist in the theme file.
+The labels in the bottom right corner of the preview image will not be displayed in the theme file.
