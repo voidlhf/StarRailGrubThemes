@@ -33,6 +33,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 6. Reboot the computer
 ## Preview
+![Huohuo](/preview/Hanya.png)
+![Luocha](/preview/Argenti.png)
 ![Huohuo](/preview/Huohuo.png)
 ![Luocha](/preview/Luocha.png)
 
