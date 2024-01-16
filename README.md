@@ -33,8 +33,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 6. Reboot the computer
 ## Preview
+![Dr. Ratio](/preview/Dr.%20Ratio.png)
 ![RuanMei](/preview/RuanMei.png)
-![Hanya](/preview/Hanya.png)
 ![Argenti](/preview/Argenti.png)
 ![Huohuo](/preview/Huohuo.png)
 ![Luocha](/preview/Luocha.png)
