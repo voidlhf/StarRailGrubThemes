@@ -33,6 +33,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 6. Reboot the computer
 ## Preview
+![Sparkle](/preview/Sparkle.png)
 ![BlackSwan](/preview/BlackSwan.png)
 ![Dr. Ratio](/preview/Dr.Ratio.png)
 ![RuanMei](/preview/RuanMei.png)
