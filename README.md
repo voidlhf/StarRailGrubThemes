@@ -40,6 +40,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ![Argenti](/preview/Argenti.png)
 ![Huohuo](/preview/Huohuo.png)
 ![Luocha](/preview/Luocha.png)
+![March7th](/preview/March7th.png)
 
 [More Preview Images](https://github.com/voidlhf/StarRailGrubThemes/tree/master/preview)
 
