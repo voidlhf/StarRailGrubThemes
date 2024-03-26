@@ -3,8 +3,11 @@ A pack of GRUB2 themes for Honkai: Star Rail
 
 ![banner](/assets/images/icon.png?raw=true)
 
-## Design File
-[Honkai: Star Rail Grub Theme Design File (Figma)](https://www.figma.com/community/file/1354356022337074054/honkai-star-rail-grub-theme-design-file)
+## Design File & Image Resources
+[Honkai: Star Rail Grub Theme Design File (Figma Design File)](https://www.figma.com/community/file/1354356022337074054/honkai-star-rail-grub-theme-design-file)
+
+[StarRailRes (Image Resources)](https://github.com/Mar-7th/StarRailRes)
+
 
 ## Theme Description
 > Access and download the required theme files from the **'themes'** folder within this project.The theme files with **'cn'** in the filename are intended for the **Chinese version**. We recommend that Chinese users utilize these versions.
