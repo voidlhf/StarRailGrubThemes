@@ -70,7 +70,7 @@ honkai-railway-grub-theme = {
 inputs.honkai-railway-grub-theme.url = "github:voidlhf/StarRailGrubThemes";
 ```
 
-3. Added GRUB theme
+2. Added GRUB theme
 ```nix
 boot.loader.grub = rec {
     # Remember. Each nix package from this repo have another name.
@@ -82,8 +82,8 @@ boot.loader.grub = rec {
 };
 ```
 
-4. Rebuild your system
-5. Reboot computer to see your theme :)
+3. Rebuild your system
+4. Reboot computer to see your theme :)
 
 ## Preview
 ![Acheron](/preview/Acheron.png)
