@@ -16,10 +16,14 @@
 
         themeNames = builtins.attrNames (builtins.readDir ./assets/themes);
         themePackages = builtins.listToAttrs (builtins.map
-          (theme: {
-            name = "${pkgs.lib.strings.toLower theme}-grub-theme";
-            value = pkgs.callPackage ./default.nix { inherit theme; };
-          })
+          (theme:
+            let
+              name = builtins.replaceStrings [ "." ] [ "_" ] (pkgs.lib.strings.toLower theme);
+            in
+            {
+              inherit name;
+              value = pkgs.callPackage ./default.nix { inherit theme; };
+            })
           themeNames);
       in
       {

@@ -22,11 +22,15 @@ jobs:
   build:
     strategy:
       matrix:
+        # Remember. Theme name in pipeline has 2 rules:
+        # - lower case names e.g. RuaMei -> ruamei
+        # - each '.' must be replaced by "_" e.g Dr.Ratio -> dr_ratio
+        # Those requiements are only for nix packages
         theme: [
             acheron,
             argenti,
             blackswan,
-            dr.ratio,
+            dr_ratio,
             hanya,
             huohuo,
             luocha,
@@ -35,7 +39,7 @@ jobs:
             acheron_cn,
             argenti_cn,
             blackswan_cn,
-            dr.ratio_cn,
+            dr_ratio_cn,
             hanya_cn,
             huohuo_cn,
             luocha_cn,
