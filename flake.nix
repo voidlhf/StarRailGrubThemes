@@ -18,7 +18,7 @@
         themePackages = builtins.listToAttrs (builtins.map
           (theme:
             let
-              name = builtins.replaceStrings [ "." ] [ "_" ] (pkgs.lib.strings.toLower theme);
+              name = (builtins.replaceStrings [ "." ] [ "_" ] (pkgs.lib.strings.toLower theme)) + "-grub-theme";
             in
             {
               inherit name;
