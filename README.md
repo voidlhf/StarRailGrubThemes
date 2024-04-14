@@ -38,6 +38,27 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 6. Reboot the computer
+
+### For NixOS users
+1. Added flake into your configuration
+```nix
+inputs.honkai-railway-grub-theme.url = "github:voidlhf/StarRailGrubThemes";
+```
+
+2. Set up theme in your configuration
+```nix
+honkai-railway-grub-theme = {
+    enable = true;
+    # Remember
+    # Theme name should have the same name as in assets/themes directory e.g. Dr.Ratio_cn is correct
+    # 'theme' field is optional. Default theme is Acheron.
+    theme = "RuanMei"; 
+};
+```
+
+3. Rebuild your system
+4. Reboot computer to see your theme :)
+
 ## Preview
 ![Acheron](/preview/Acheron.png)
 ![BlackSwan](/preview/BlackSwan.png)
