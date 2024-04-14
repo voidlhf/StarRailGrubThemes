@@ -24,7 +24,26 @@ jobs:
   build:
     strategy:
       matrix:
-        theme: [ acheron argenti blackswan dr.ratio hanya huohuo luocha ruanmei sparkle acheron_cn argenti_cn blackswan_cn dr.ratio_cn hanya_cn huohuo_cn luocha_cn ruanmei_cn sparkle_cn ]
+        theme: [
+            acheron
+            argenti
+            blackswan
+            dr.ratio
+            hanya
+            huohuo
+            luocha
+            ruanmei
+            sparkle
+            acheron_cn
+            argenti_cn
+            blackswan_cn
+            dr.ratio_cn
+            hanya_cn
+            huohuo_cn
+            luocha_cn
+            ruanmei_cn
+            sparkle_cn,
+          ]
     name: Build Nix
     runs-on: ubuntu-latest
     steps:
