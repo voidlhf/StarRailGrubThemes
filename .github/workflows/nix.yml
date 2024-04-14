@@ -19,30 +19,28 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@v9
       - name: Check repository
         run: nix flake check
-      - name: Build packages
-        run: nix build .#${{ matrix.theme }}-grub-theme
   build:
     strategy:
       matrix:
         theme: [
-            acheron
-            argenti
-            blackswan
-            dr.ratio
-            hanya
-            huohuo
-            luocha
-            ruanmei
-            sparkle
-            acheron_cn
-            argenti_cn
-            blackswan_cn
-            dr.ratio_cn
-            hanya_cn
-            huohuo_cn
-            luocha_cn
-            ruanmei_cn
-            sparkle_cn,
+            acheron,
+            argenti,
+            blackswan,
+            dr.ratio,
+            hanya,
+            huohuo,
+            luocha,
+            ruanmei,
+            sparkle,
+            acheron_cn,
+            argenti_cn,
+            blackswan_cn,
+            dr.ratio_cn,
+            hanya_cn,
+            huohuo_cn,
+            luocha_cn,
+            ruanmei_cn,
+            sparkle_cn
           ]
     name: Build Nix
     runs-on: ubuntu-latest
