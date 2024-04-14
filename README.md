@@ -45,7 +45,14 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 inputs.honkai-railway-grub-theme.url = "github:voidlhf/StarRailGrubThemes";
 ```
 
-2. Set up theme in your configuration
+2. Added honkai-railway-grub-theme as NixOS Module
+```nix
+# your configuration.nix
+# ${system} - system architectuer e.g. x86_64-linux
+imports = [ home-inputs.honkai-railway-grub-theme.nixosModules.${system}.default ];
+```
+
+3. Set up theme in your configuration
 ```nix
 honkai-railway-grub-theme = {
     enable = true;
@@ -56,8 +63,8 @@ honkai-railway-grub-theme = {
 };
 ```
 
-3. Rebuild your system
-4. Reboot computer to see your theme :)
+4. Rebuild your system
+5. Reboot computer to see your theme :)
 
 ## Preview
 ![Acheron](/preview/Acheron.png)
