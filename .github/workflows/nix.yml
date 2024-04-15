@@ -34,7 +34,7 @@ jobs:
       - generate-matrix
     strategy:
       matrix:
-        theme: ${{ fromJSON(needs.generate-matrix.outputs.themes) }}
+        theme: ${{ needs.generate-matrix.outputs.themes }}
     name: Build Nix
     runs-on: ubuntu-latest
     steps:
