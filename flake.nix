@@ -32,7 +32,7 @@
         } // themePackages;
 
         devShells.default = pkgs.mkShell {
-          nativeBuildInputs = with pkgs; [ nixpkgs-fmt nixd ];
+          nativeBuildInputs = with pkgs; [ nixpkgs-fmt nixd act ];
         };
 
         nixosModules.default = ./module.nix;
