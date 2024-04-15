@@ -22,19 +22,20 @@ jobs:
   generate-matrix:
     name: Generate matrix data for build job
     runs-on: ubuntu-latest
+    outputs:
+      theme: ${{ steps.gen-matrix.outputs.theme }}
     steps:
       - uses: actions/checkout@v4
       - name: Generate matrix
+        id: gen-matrix
         run: |
           THEMES=$(ls assets/themes | tr '[:upper:]' '[:lower:]' | sed 's/\./_/g' | jq --raw-input | jq --slurp -c)
-
-          echo "themes=$THEMES" >> $GITHUB_OUTPUT
+          echo "theme=$THEMES" >> $GITHUB_OUTPUT
   build:
-    needs:
-      - generate-matrix
+    needs: generate-matrix
     strategy:
       matrix:
-        theme: ${{ needs.generate-matrix.outputs.themes }}
+        theme: ${{ fromJSON(needs.generate-matrix.outputs.theme) }}
     name: Build Nix
     runs-on: ubuntu-latest
     steps:
