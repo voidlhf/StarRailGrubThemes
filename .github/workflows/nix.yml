@@ -27,6 +27,8 @@ jobs:
         # - each '.' must be replaced by "_" e.g Dr.Ratio -> dr_ratio
         # Those requiements are only for nix packages
         theme: [
+            jingliu,
+            aventurine,
             acheron,
             argenti,
             blackswan,
@@ -36,6 +38,8 @@ jobs:
             luocha,
             ruanmei,
             sparkle,
+            jingliu_cn,
+            aventurine_cn,
             acheron_cn,
             argenti_cn,
             blackswan_cn,

@@ -33,7 +33,7 @@ GRUB_THEME="/usr/share/grub/themes/Guinaifen/theme.txt"
 ```
 
 5. Update grub
-```
+```shell
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
@@ -86,10 +86,11 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Aventurine](/preview/Aventurine.png)
 ![Acheron](/preview/Acheron.png)
 ![BlackSwan](/preview/BlackSwan.png)
 ![Sparkle](/preview/Sparkle.png)
-![Dr. Ratio](/preview/Dr.Ratio.png)
+![Jingliu](/preview/Jingliu.png)
 ![RuanMei](/preview/RuanMei.png)
 ![Argenti](/preview/Argenti.png)
 ![Huohuo](/preview/Huohuo.png)
