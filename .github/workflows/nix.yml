@@ -19,37 +19,22 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@v9
       - name: Check repository
         run: nix flake check
+  generate-matrix:
+    name: Generate matrix data for build job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate matrix
+        run: |
+          THEMES=$(ls assets/themes | tr '[:upper:]' '[:lower:]' | sed 's/\./_/g' | jq --raw-input | jq --slurp -c)
+
+          echo "themes=$THEMES" >> $GITHUB_OUTPUT
   build:
+    needs:
+      - generate-matrix
     strategy:
       matrix:
-        # Remember. Theme name in pipeline has 2 rules:
-        # - lower case names e.g. RuaMei -> ruamei
-        # - each '.' must be replaced by "_" e.g Dr.Ratio -> dr_ratio
-        # Those requiements are only for nix packages
-        theme: [
-            jingliu,
-            aventurine,
-            acheron,
-            argenti,
-            blackswan,
-            dr_ratio,
-            hanya,
-            huohuo,
-            luocha,
-            ruanmei,
-            sparkle,
-            jingliu_cn,
-            aventurine_cn,
-            acheron_cn,
-            argenti_cn,
-            blackswan_cn,
-            dr_ratio_cn,
-            hanya_cn,
-            huohuo_cn,
-            luocha_cn,
-            ruanmei_cn,
-            sparkle_cn
-          ]
+        theme: ${{ fromJSON(needs.generate-matrix.outputs.themes) }}
     name: Build Nix
     runs-on: ubuntu-latest
     steps:
