@@ -86,6 +86,7 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Jade](/preview/Jade.png)
 ![Firefly](/preview/Firefly.png)
 ![Boothill](/preview/Boothill.png)
 ![Robin](/preview/Robin.png)
