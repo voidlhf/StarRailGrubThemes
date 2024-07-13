@@ -1,0 +1,20 @@
+name: Update flake.lock
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@v12
+      - name: Update flake.lock
+        uses: DeterminateSystems/update-flake-lock@v23
+        with:
+          pr-assignees: voidlhf
+          pr-title: "chore(flake): update flake.lock" 
+          pr-labels: |                  
+            dependencies
+            automated
