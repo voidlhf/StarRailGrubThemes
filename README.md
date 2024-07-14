@@ -96,6 +96,7 @@ boot.loader.grub = rec {
 ![RuanMei](/preview/RuanMei.png)
 ![Huohuo](/preview/Huohuo.png)
 ![Luocha](/preview/Luocha.png)
+![March7th](/preview/March7th.png)
 
 [More Preview Images](https://github.com/voidlhf/StarRailGrubThemes/tree/master/preview)
 
