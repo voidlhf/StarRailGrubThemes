@@ -13,7 +13,7 @@ jobs:
       - name: Update flake.lock
         uses: DeterminateSystems/update-flake-lock@v24
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN_FOR_UPDATES }}
           pr-assignees: voidlhf
           pr-title: "chore(flake): update flake.lock" 
           pr-labels: |                  
