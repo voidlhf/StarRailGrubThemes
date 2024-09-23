@@ -11,12 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check Nix flake inputs
-        uses: DeterminateSystems/flake-checker-action@v5
+        uses: DeterminateSystems/flake-checker-action@v9
         with:
           send-statistics: false
           fail-mode: true
       - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@v9
+        uses: DeterminateSystems/nix-installer-action@v14
       - name: Check repository
         run: nix flake check
   generate-matrix:
@@ -41,6 +41,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@v9
+        uses: DeterminateSystems/nix-installer-action@v14
+      - name: Update flake.lock
+        uses: DeterminateSystems/update-flake-lock@v24
       - name: Build packages
         run: nix build .#${{ matrix.theme }}-grub-theme
