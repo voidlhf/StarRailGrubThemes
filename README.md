@@ -86,6 +86,8 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Sunday](/preview/Sunday.png)
+![Fugue](/preview/Fugue.png)
 ![Rappa](/preview/Rappa.png)
 ![Lingsha](/preview/Lingsha.png)
 ![Feixiao](/preview/Feixiao.png)
@@ -93,10 +95,6 @@ boot.loader.grub = rec {
 ![Yunli](/preview/Yunli.png)
 ![Jiaoqiu](/preview/Jiaoqiu.png)
 ![Jade](/preview/Jade.png)
-![Aventurine](/preview/Aventurine.png)
-![Acheron](/preview/Acheron.png)
-![BlackSwan](/preview/BlackSwan.png)
-![Huohuo](/preview/Huohuo.png)
 
 [More Preview Images](https://github.com/voidlhf/StarRailGrubThemes/tree/master/preview)
 
