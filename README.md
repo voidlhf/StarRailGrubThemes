@@ -19,7 +19,7 @@ Using the `Guinaifen` theme as an example
 
 2. Copy `Guinaifen` into grub themes directory
 ```shell
-sudo cp -r Guinaifen /usr/share/grub/themes
+sudo cp -r Guinaifen /usr/share/grub/themes/
 ```
 
 3. Edit `grub` file
@@ -86,13 +86,13 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![TheHerta](/preview/TheHerta.png)
+![Aglaea](/preview/Aglaea.png)
 ![Sunday](/preview/Sunday.png)
 ![Fugue](/preview/Fugue.png)
-![Rappa](/preview/Rappa.png)
 ![Lingsha](/preview/Lingsha.png)
 ![Feixiao](/preview/Feixiao.png)
 ![March7th-TheHunt](/preview/March7th-TheHunt.png)
-![Yunli](/preview/Yunli.png)
 ![Jiaoqiu](/preview/Jiaoqiu.png)
 ![Jade](/preview/Jade.png)
 
