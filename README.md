@@ -86,6 +86,8 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Castorice](/preview/Castorice.png)
+![Anaxa](/preview/Anaxa.png)
 ![Tribbie](/preview/Tribbie.png)
 ![Mydei](/preview/Mydei.png)
 ![TheHerta](/preview/TheHerta.png)
