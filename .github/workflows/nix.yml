@@ -1,0 +1,46 @@
+name: Check nix packages
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+  push:
+    branches: [master]
+jobs:
+  check:
+    name: Check Nix
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Nix flake inputs
+        uses: DeterminateSystems/flake-checker-action@v9
+        with:
+          send-statistics: false
+          fail-mode: true
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v14
+      - name: Check repository
+        run: nix flake check
+  generate-matrix:
+    name: Generate matrix data for build job
+    runs-on: ubuntu-latest
+    outputs:
+      theme: ${{ steps.gen-matrix.outputs.theme }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate matrix
+        id: gen-matrix
+        run: |
+          THEMES=$(ls assets/themes | tr '[:upper:]' '[:lower:]' | sed 's/\./_/g' | jq --raw-input | jq --slurp -c)
+          echo "theme=$THEMES" >> $GITHUB_OUTPUT
+  build:
+    needs: generate-matrix
+    strategy:
+      matrix:
+        theme: ${{ fromJSON(needs.generate-matrix.outputs.theme) }}
+    name: Build Nix
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v14
+      - name: Build packages
+        run: nix build .#${{ matrix.theme }}-grub-theme

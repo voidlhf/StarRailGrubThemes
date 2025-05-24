@@ -1,0 +1,38 @@
+name: Release Themes
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository (with all history and tags)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run shell script
+        run: bash tar.sh
+        
+      - name: Set tag name (with date-time to the second)
+        id: set_tag
+        run: echo "tag=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
+
+      - name: Create Git tag
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag ${{ steps.set_tag.outputs.tag }}
+          git push origin ${{ steps.set_tag.outputs.tag }}
+
+      - name: Create GitHub release and upload files from themes/
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.set_tag.outputs.tag }}
+          name: Release ${{ steps.set_tag.outputs.tag }}
+          files: |
+            themes/**
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
