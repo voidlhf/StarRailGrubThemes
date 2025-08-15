@@ -86,6 +86,8 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Hysilens](/preview/Hysilens.png)
+![Cerydra](/preview/Cerydra.png)
 ![Phainon](/preview/Phainon.png)
 ![Saber](/preview/Saber.png)
 ![Archer](/preview/Archer.png)
