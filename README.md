@@ -86,17 +86,14 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Cyrene](/preview/Cyrene.png)
+![DanHeng-PermansorTerrae](/preview/DanHeng-PermansorTerrae.png)
 ![Evernight](/preview/Evernight.png)
 ![Hysilens](/preview/Hysilens.png)
 ![Cerydra](/preview/Cerydra.png)
 ![Phainon](/preview/Phainon.png)
 ![Saber](/preview/Saber.png)
 ![Archer](/preview/Archer.png)
-![Hyacine](/preview/Hyacine.png)
-![Cipher](/preview/Cipher.png)
-![Castorice](/preview/Castorice.png)
-![Anaxa](/preview/Anaxa.png)
-![Tribbie](/preview/Tribbie.png)
 
 [More Preview Images](https://github.com/voidlhf/StarRailGrubThemes/tree/master/preview)
 
