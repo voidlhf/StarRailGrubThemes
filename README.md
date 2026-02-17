@@ -86,6 +86,8 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Sparxie](/preview/Sparxie.png)
+![YaoGuang](/preview/YaoGuang.png)
 ![TheDahlia](/preview/TheDahlia.png)
 ![Cyrene](/preview/Cyrene.png)
 ![DanHeng-PermansorTerrae](/preview/DanHeng-PermansorTerrae.png)
