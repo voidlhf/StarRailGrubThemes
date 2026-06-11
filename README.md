@@ -86,6 +86,7 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![MortenaxBlade](/preview/MortenaxBlade.png)
 ![Evanescia](/preview/Evanescia.png)
 ![SilverWolf-LV.999](/preview/SilverWolf-LV.999.png)
 ![Ashveil](/preview/Ashveil.png)

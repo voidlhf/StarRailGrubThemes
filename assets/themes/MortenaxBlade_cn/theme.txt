@@ -1,0 +1,30 @@
+title-text: ""
+desktop-image: "background.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-border: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+
++ boot_menu {
+  left = 134
+  top = 45%
+  width = 502
+  height = 35%
+  item_color = "#cccccc"
+  selected_item_color = "#ffffff"
+  item_icon_space = 15
+  item_height = 45
+  item_padding = 2
+  item_spacing = 40
+  selected_item_pixmap_style = "select_*.png"
+}
+
++ label {
+  left = 134
+  top = 84%
+  align = "center"
+  id = "__timeout__"
+  text = "当前已选中系统将会在 %d 秒后启动"
+  color = "#cccccc"
+}
