@@ -86,12 +86,10 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Himeko-Nova](/preview/Himeko-Nova.png)
+![RinTohsaka](/preview/RinTohsaka.png)
+![Gilgamesh](/preview/Gilgamesh.png)
 ![MortenaxBlade](/preview/MortenaxBlade.png)
-![Evanescia](/preview/Evanescia.png)
-![SilverWolf-LV.999](/preview/SilverWolf-LV.999.png)
-![Ashveil](/preview/Ashveil.png)
-![Sparxie](/preview/Sparxie.png)
-![YaoGuang](/preview/YaoGuang.png)
 
 [More Preview Images](https://github.com/voidlhf/StarRailGrubThemes/tree/master/preview)
 
