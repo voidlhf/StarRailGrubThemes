@@ -36,6 +36,10 @@ GRUB_THEME="/usr/share/grub/themes/Tribbie/theme.txt"
 ```shell
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+Grub2
+```shell
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
 
 6. Reboot the computer
 
