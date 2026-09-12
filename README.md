@@ -86,6 +86,8 @@ boot.loader.grub = rec {
 4. Reboot computer to see your theme :)
 
 ## Preview
+![Robin-Summeretto](/preview/Robin-Summeretto.png)
+![Aventurine-Waveflair](/preview/Aventurine-Waveflair.png)
 ![Himeko-Nova](/preview/Himeko-Nova.png)
 ![RinTohsaka](/preview/RinTohsaka.png)
 ![Gilgamesh](/preview/Gilgamesh.png)
